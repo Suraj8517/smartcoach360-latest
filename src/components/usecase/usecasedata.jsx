@@ -1,0 +1,98 @@
+export const USE_CASES = [
+  {
+    id: 'pt',
+    num: '001 / ',
+    audience: 'Personal Trainers',
+    tagline: 'Spend less time on admin',
+    headline: 'SPEND LESS TIME<br/>ON ADMIN.<br/><em style="color:var(--green);font-style:normal">MORE TIME<br/>COACHING.</em>',
+    subhead:
+      'Your time is a high-value asset. When it\'s absorbed by manual tasks and disconnected tools, delivery and growth both suffer. SmartCoach360 standardises your operations so you can focus on coaching outcomes — and increase capacity without compromising quality.',
+    challenges: [
+      'Tracking client progress across a patchwork of spreadsheets and handwritten notes',
+      'Chasing payments and manually keeping track of session packs',
+      'Sending workout and nutrition plans through WhatsApp or email every week',
+      'Clients drifting away because follow-ups and engagement aren\'t consistent',
+      'Hitting a client ceiling because operations simply can\'t scale with manual systems',
+    ],
+    solutions: [
+      { title: 'Custom Programs for Every Client',  desc: 'Build your workout library once, then assign personalised programs instantly. Clients receive everything directly in the mobile app — no screenshots, no PDFs.' },
+      { title: 'Nutrition & Macro Tracking',        desc: 'Set personalised nutrition targets for each client, track compliance, and monitor activity — all from a single dashboard.' },
+      { title: 'Client Messaging, Without Admin',   desc: 'Automated check-ins, in-app messaging, and video calls keep clients engaged between sessions without manual follow-ups every day.' },
+      { title: 'Effortless Payment Management',     desc: 'Session packs, online payments, custom discounts, and partial payment options — configured once and running automatically.' },
+      { title: 'Progress at a Glance',              desc: 'A clean dashboard shows you how every client is doing — compliance, progress, and assessments — without digging through messages.' },
+      { title: 'Your Business in Your Pocket',      desc: 'Manage everything from your phone. The SmartCoach360 mobile app gives full platform access on both iOS and Android.' },
+    ],
+  },
+  {
+    id: 'gym',
+    num: '002 / ',
+    audience: 'Gym Owners & Studios',
+    tagline: 'One platform, full control',
+    headline: 'RUN YOUR ENTIRE<br/>GYM FROM<br/><em style="color:var(--green);font-style:normal">ONE POWERFUL<br/>PLATFORM.</em>',
+    subhead:
+      'Running a gym requires visibility across coaches, clients, classes, memberships, and revenue. SmartCoach360 provides a single operational view — so you can standardise delivery, reduce overhead, and make decisions with real-time insight.',
+    challenges: [
+      'Coordinating multiple coaches and client assignments manually, with no central view',
+      'Inconsistent client experiences depending on which coach they work with',
+      'Class scheduling and appointment bookings scattered across different systems',
+      'Slow, error-prone billing and membership management',
+      'No easy way to track revenue and performance across your whole business',
+    ],
+    solutions: [
+      { title: 'Multi-coach & Branch Management',    desc: 'Assign coaches to clients, set capacity thresholds, and track performance across every location from one dashboard.' },
+      { title: 'Consistent Client Experience',       desc: 'Build master programmes that every coach follows, so clients get the same high-quality experience regardless of who they train with.' },
+      { title: 'Classes, Appointments & Calendar',   desc: 'Schedule group classes and one-on-one sessions, sync calendars across your team, and avoid double-bookings.' },
+      { title: 'Business Dashboards & Reporting',    desc: 'See revenue, client retention, compliance rates, and coach performance in real time — always know the health of your business.' },
+      { title: 'Automated Billing & Memberships',    desc: 'Session packs, recurring memberships, discounts, and pauses — all managed automatically, without chasing a single payment.' },
+      { title: 'Role & Access Management',           desc: 'Give each team member exactly the access they need. Coaches see their clients, managers see reporting, reception handles bookings.' },
+    ],
+  },
+  {
+    id: 'nut',
+    num: '003 / ',
+    audience: 'Nutrition & Wellness Coaches',
+    tagline: 'Personalised nutrition at scale',
+    headline: 'DELIVER PERSONALISED<br/>NUTRITION<br/><em style="color:var(--green);font-style:normal">AT SCALE.</em>',
+    subhead:
+      'Nutrition coaching is deeply personal work. Getting it right requires consistent monitoring, personalised planning, and ongoing client accountability. SmartCoach360 gives you the tools to do that for more clients than you ever thought possible.',
+    challenges: [
+      'Manually creating individual meal plans and sending them out one by one',
+      'No reliable way to know whether clients are actually following their plan',
+      'Tracking client activity and health data across multiple apps and spreadsheets',
+      'Clients going quiet between check-in calls and falling off their programme',
+      'Struggling to grow your client base without compromising coaching quality',
+    ],
+    solutions: [
+      { title: 'Personalised Meal Plans & Recipes',  desc: 'Create a library of plans and recipes, then assign customised nutrition programmes to each client quickly and easily.' },
+      { title: 'Macro & Nutrition Goal Tracking',    desc: 'Set specific targets for each client and track daily intake in real time — no more waiting for a weekly check-in.' },
+      { title: 'Compliance Monitoring',              desc: 'See at a glance which clients are hitting their nutrition targets and which ones need a nudge — across your entire client base.' },
+      { title: 'Female Health Tracker',              desc: 'Track hormonal cycles alongside nutrition and activity data for a more holistic, personalised approach to coaching female clients.' },
+      { title: 'Health & Activity Integration',      desc: 'Sync real-world activity data from Apple Health, Google Fit, and Health Connect so your coaching is based on what\'s happening.' },
+      { title: 'Automated Check-ins & Accountability', desc: 'Set up automated daily or weekly check-in messages so clients stay supported and accountable between sessions.' },
+    ],
+  },
+  {
+    id: 'ent',
+    num: '004 / ',
+    audience: 'Large Fitness Organisations',
+    tagline: 'Enterprise-grade infrastructure',
+    headline: 'ENTERPRISE TOOLS<br/>TO MANAGE,<br/><em style="color:var(--green);font-style:normal">SCALE, AND<br/>AUTOMATE.</em>',
+    subhead:
+      'When you\'re running multiple locations, managing large coaching teams, and serving thousands of clients, disconnected systems get expensive fast. SmartCoach360 provides enterprise-grade infrastructure built for the fitness industry.',
+    challenges: [
+      'No single system connecting all branches, teams, and coaching data',
+      'Service quality varies depending on location or coach',
+      'Manual lead allocation creating slow response times and missed opportunities',
+      'Difficulty controlling data access across a large team with different roles',
+      'No bird\'s-eye view of organisational performance',
+    ],
+    solutions: [
+      { title: 'Multi-branch & Team Management',    desc: 'Manage every branch and coaching team from one central dashboard — with consistent workflows and a single source of truth.' },
+      { title: 'Automated Lead & Client Allocation', desc: 'New enquiries are automatically assigned to the right coach based on your rules — no bottlenecks, no delays, no manual work.' },
+      { title: 'Role Management & Access Control',   desc: 'Define precise roles for coaches, managers, admins, and support staff with granular permissions controlling exactly what each person can see.' },
+      { title: 'Organisation-wide Dashboards',       desc: 'A real-time view of client statistics, coach performance, and revenue across every branch — so nothing slips through the cracks.' },
+      { title: 'SSO & Enterprise Security',          desc: 'Single Sign-On keeps team access secure and centralised, while enterprise-grade controls help protect client data.' },
+      { title: 'Bulk Upload & Onboarding',           desc: 'Onboard hundreds of clients and coaches at once without hours of manual data entry.' },
+    ],
+  },
+]
