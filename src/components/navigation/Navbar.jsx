@@ -7,6 +7,7 @@ const links = [
   { label: 'Clients', to: '/usecase' },
   { label: 'Integrations', to: '/integrations' },
   { label: 'Case Studies', to: '/case-studies' },
+    { label: 'Comparison', to: '/comparison' },
 ]
 
 export default function Navbar() {

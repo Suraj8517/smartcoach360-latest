@@ -7,6 +7,7 @@ import Footer from './components/navigation/footer'
 import UseCases from './pages/usecases'
 import Integrations from './pages/integrations'
 import CaseStudies from './pages/casestudies'
+import Comparison from './pages/comparison'
 export default function App() {
 
 
@@ -19,6 +20,7 @@ export default function App() {
         <Route path="/usecase" element={<UseCases />} />
         <Route path="/integrations" element={<Integrations />} />
         <Route path="/case-studies" element={<CaseStudies />} />
+        <Route path="/comparison" element={<Comparison />} />
       </Routes>
       <Footer/>
     </div>

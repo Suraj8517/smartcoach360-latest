@@ -1,6 +1,7 @@
 import { useRef } from 'react'
 import { useInView } from 'framer-motion'
 import logo from '../../assets/world.png'
+import logoscatter from '../../assets/logo-scatter.png'
 
 /* ─── MARQUEE ─────────────────────────────────────────────────────────────── */
 const ITEMS = [
@@ -46,7 +47,7 @@ export function Trust() {
     <section className="relative overflow-hidden" style={{ borderBottom: '1px solid var(--rule)' }}>
 
       <div
-        className="absolute inset-0 bg-center bg-contain bg-no-repeat opacity-30 2xl:opacity-10 "
+        className="absolute inset-0 bg-center bg-contain bg-no-repeat opacity-20 2xl:opacity-10 "
         style={{
           backgroundImage: `url(${logo})`,
         }}
@@ -277,23 +278,47 @@ export function Features() {
   const inView = useInView(ref, { once: true, margin: '-60px' })
 
   return (
-    <section id="features" style={{ borderBottom: '1px solid var(--rule)' }}>
-      <div className="font-mono text-[9px] sm:text-[10px] tracking-[0.2em] uppercase flex items-center gap-4 mt-6 px-4 sm:px-6 md:px-10" style={{ color: 'var(--muted)' }}>
-        <span>003 / PLATFORM FEATURES</span>
-        <span className="flex-shrink-0 w-14 sm:w-20 h-px" style={{ background: 'var(--muted2)' }} />
-      </div>
-      <div ref={ref} className="flex flex-col md:flex-row items-start md:items-end justify-between gap-6 md:gap-10 px-4 sm:px-6 md:px-10 pt-14 sm:pt-16 md:pt-6 pb-8 sm:pb-10" style={{ borderBottom: '1px solid var(--rule)' }}>
-        <h2 className="font-display font-black leading-[0.9] tracking-[-0.03em]" style={{ fontSize: 'clamp(36px,7vw,100px)', color: 'var(--text)' }}>
-          THE<br /><em style={{ fontStyle:'normal', color:'var(--green)' }}>FULL</em><br />SYSTEM
-        </h2>
-        <p className="max-w-full md:max-w-[280px] text-[13px] sm:text-[14px] leading-[1.65] md:text-right hidden md:block" style={{ color: 'var(--muted)' }}>
-<strong className='text-white'>Everything You Need to Coach, Grow, and Automate Your Business</strong><br/>SmartCoach360 is built specifically for fitness coaching—designed around how coaches run sessions, track progress, and manage client communication day to day.         </p>
-      </div>
+   <section id="features" className="relative overflow-hidden" style={{ borderBottom: '1px solid var(--rule)' }}>
+  <div className="absolute inset-0 pointer-events-none">
+    <div
+      className="absolute inset-0 bg-no-repeat opacity-10 2xl:opacity-5"
+      style={{
+        backgroundImage: `url(${logoscatter})`,
+        backgroundPosition: 'center',
+      }}
+    />
+    <div className="absolute inset-0 2xl:bg-black/40 bg:black/60 " />
+  </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mx-auto px-4 sm:px-6 md:px-10" style={{ borderBottom: '1px solid var(--rule)' }}>
-        {FEATS.map((f, i) => <FeatCard key={f.num} feat={f} index={i} />)}
-      </div>
-    </section>
+  <div className="relative z-10">
+    <div className="font-mono text-[9px] sm:text-[10px] tracking-[0.2em] uppercase flex items-center gap-4 mt-6 px-4 sm:px-6 md:px-10" style={{ color: 'var(--muted)' }}>
+      <span>003 / PLATFORM FEATURES</span>
+      <span className="flex-shrink-0 w-14 sm:w-20 h-px" style={{ background: 'var(--muted2)' }} />
+    </div>
+
+    <div
+      ref={ref}
+      className="flex flex-col md:flex-row items-start md:items-end justify-between gap-6 md:gap-10 px-4 sm:px-6 md:px-10 pt-14 sm:pt-16 md:pt-6 pb-8 sm:pb-10"
+      style={{ borderBottom: '1px solid var(--rule)' }}
+    >
+      <h2
+        className="font-display font-black leading-[0.9] tracking-[-0.03em]"
+        style={{ fontSize: 'clamp(36px,7vw,100px)', color: 'var(--text)' }}
+      >
+        THE<br /><em style={{ fontStyle:'normal', color:'var(--green)' }}>FULL</em><br />SYSTEM
+      </h2>
+
+      <p className="max-w-full md:max-w-[280px] text-[13px] sm:text-[14px] leading-[1.65] md:text-right hidden md:block" style={{ color: 'var(--muted)' }}>
+        <strong className="text-white">Everything You Need to Coach, Grow, and Automate Your Business</strong><br/>
+        SmartCoach360 is built specifically for fitness coaching—designed around how coaches run sessions, track progress, and manage client communication day to day.
+      </p>
+    </div>
+
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mx-auto px-4 sm:px-6 md:px-10" style={{ borderBottom: '1px solid var(--rule)' }}>
+      {FEATS.map((f, i) => <FeatCard key={f.num} feat={f} index={i} />)}
+    </div>
+  </div>
+</section>
   )
 }
 
