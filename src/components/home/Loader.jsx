@@ -39,8 +39,11 @@ export default function Loader({ done }) {
             overflow: 'hidden',
           }}
         >
-
-          {/* ── Scan-line grid overlay ── */}
+<img
+                src={title}
+                alt="logo"
+                style={{ width: 52, height: 58, objectFit: 'contain', mixBlendMode: 'lighten' }}
+              />
           <div aria-hidden style={{
             position: 'absolute', inset: 0, pointerEvents: 'none',
             backgroundImage: `
@@ -51,7 +54,6 @@ export default function Loader({ done }) {
             maskImage: 'radial-gradient(ellipse 70% 60% at 50% 50%, black 30%, transparent 100%)',
           }} />
 
-          {/* ── Green ambient glow behind center ── */}
           <div aria-hidden style={{
             position: 'absolute',
             width: '520px', height: '260px',
@@ -61,28 +63,7 @@ export default function Loader({ done }) {
             filter: 'blur(30px)',
           }} />
 
-          {/* ── Corner marks ── */}
-          {[
-            { top: 32, left: 32, borderTop: '1px solid', borderLeft: '1px solid' },
-            { top: 32, right: 32, borderTop: '1px solid', borderRight: '1px solid' },
-            { bottom: 32, left: 32, borderBottom: '1px solid', borderLeft: '1px solid' },
-            { bottom: 32, right: 32, borderBottom: '1px solid', borderRight: '1px solid' },
-          ].map((style, i) => (
-            <motion.div
-              key={i}
-              aria-hidden
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.2 + i * 0.07, duration: 0.4 }}
-              style={{
-                position: 'absolute', width: 20, height: 20,
-                borderColor: 'rgba(0,255,148,0.25)',
-                ...style,
-              }}
-            />
-          ))}
-
-          {/* ── Main content ── */}
+          
           <motion.div
             initial={{ opacity: 0, y: 24 }}
             animate={visible ? { opacity: 1, y: 0 } : { opacity: 0, y: 24 }}
@@ -94,13 +75,7 @@ export default function Loader({ done }) {
             }}
           >
 
-            {/* Logo mark + wordmark row */}
             <div style={{ display: 'flex', alignItems: 'center', gap: 14, marginBottom: 40 }}>
-              <img
-                src={title}
-                alt="logo"
-                style={{ width: 52, height: 58, objectFit: 'contain', mixBlendMode: 'lighten' }}
-              />
 
               {/* Wordmark */}
               <div
