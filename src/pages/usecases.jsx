@@ -3,7 +3,7 @@ import { useInView } from 'framer-motion'
 import UseCaseHero from '../components/usecase/useCaseHero'
 import UseCaseNav from '../components/usecase/usecasenav'
 import UseCaseSection from '../components/usecase/usecasesection'
-import { USE_CASES } from '../components/usecase/UseCaseData'
+import { USE_CASES } from '../components/usecase/usecasedata'
 import ComparisonTable from '../components/usecase/comparisontable'
 
 
