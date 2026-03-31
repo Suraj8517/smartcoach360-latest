@@ -68,7 +68,7 @@ export default function WhySection() {
         <div
           style={{
             display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 480px), 1fr))',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 380px), 1fr))',
             gap: '1px',
             background: 'var(--rule)',
             border: '1px solid var(--rule)',
