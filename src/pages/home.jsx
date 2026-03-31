@@ -36,7 +36,6 @@ export default function Home() {
             <Features />
             <WhoItsFor />
             <Process />
-            <Integrations />
             <Support/>
             <CTA />
           </main>
